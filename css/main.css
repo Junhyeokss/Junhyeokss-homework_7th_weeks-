@@ -1,0 +1,353 @@
+.topBanner {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.topBanner .inner {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  line-height: 45px;
+  gap: 30px;
+  justify-content: flex-end;
+}
+.topBanner .list ul {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+.topBanner .list ul::before {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  height: 15px;
+  top: 16px;
+  right: 70px;
+  background: #6666;
+}
+
+.topBanner .list a {
+  color: #777777;
+}
+
+.topBanner .language {
+  color: #777777;
+}
+
+.header {
+  position: relative;
+}
+
+.header h1 {
+  font-size: 0;
+}
+
+.header .inner h1 img {
+  size: 400px;
+}
+
+.header .inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  line-height: 40px;
+  padding: 25px 0;
+}
+
+.header .inner .gnb > ul {
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.header .gnb li .link {
+  position: relative;
+}
+
+.header .gnb .link::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  height: 5px;
+  opacity: 0;
+  background-color: #f14378;
+  transition: 0.4s;
+  border-radius: 60px;
+}
+
+.header .gnb li .link:hover:before {
+  opacity: 1;
+}
+
+.header .gnb .submenu {
+  position: absolute;
+  z-index: 9999;
+  height: 1;
+  opacity: 0;
+}
+
+.header:hover .gnb .submenu {
+  position: absolute;
+  top: 80px;
+  height: 1;
+  opacity: 1;
+}
+
+.header .gnb::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9998;
+  transition: 0.5s;
+}
+
+.header:hover .gnb:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mainVisual {
+  position: relative;
+  width: 100%;
+}
+
+.mainVisual .main_slide .slick-dots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9998;
+}
+
+.mainVisual .main_slide .slick-dots > li {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  gap: 30px;
+  background: #f14378;
+  margin: 0 2px;
+  border-radius: 100px;
+}
+
+.mainVisual .main_slide .slick-dots > li.slick-active {
+  background: #ffff;
+}
+
+.mainVisual .main_slide .slick-dots > li button {
+  display: none;
+}
+
+.subMenu {
+  background-color: #f7f7f7f7;
+}
+
+.subMenu .inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subMenu .inner ul {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.descTeam {
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+.descTeam h2 {
+  padding: 0 0 40px 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.descTeam strong {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid #ddd;
+  transition: 0.5px;
+  border-radius: 20px;
+}
+
+.descTeam strong:hover {
+  border: 3px solid #f8a3bd;
+  border-radius: 20px;
+}
+
+.descTeam .inner {
+  display: flex;
+  width: 1200px;
+
+  margin: 0 auto;
+  padding: 60px 0;
+  justify-content: space-between;
+}
+
+.descTeam .inner .box1 {
+  margin: 60px 0 0 0;
+}
+
+.descTeam .inner .box3 {
+  margin: 60px 0 0 0;
+}
+
+.descTeam .inner h3 {
+  padding: 50px 0 20px 0;
+  color: #f8a3bd;
+}
+
+.descTeam .inner span {
+  display: block;
+  font-weight: 500;
+}
+
+.descTeam .inner p {
+  padding: 20px 0;
+}
+
+.descTeam .inner .box {
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.descTeam .inner .box:hover {
+  background: rgba(129, 82, 107, 0.3);
+}
+
+.descTeam .inner .box1 {
+  position: relative;
+}
+
+.descTeam .inner .box1 .display {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.descTeam .inner .box2 {
+  position: relative;
+}
+
+.descTeam .inner .box2 .display {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.descTeam .inner .box3 {
+  position: relative;
+}
+
+.descTeam .inner .box3 .display {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.descTeam .inner .box4 {
+  position: relative;
+}
+
+.descTeam .inner .box4 .display {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Contact {
+  padding: 80px 0 20px 0;
+  background-color: #f7f7f7f7;
+}
+
+.Contact h4 {
+  font-size: 35px;
+  color: #f8a3bd;
+}
+
+.Contact .inner {
+  display: flex;
+  gap: 50px;
+}
+
+.Contact .inner .left {
+  flex: 1;
+  width: 500px;
+  text-align: left;
+  background: #fff;
+}
+
+.Contact .inner .left .top {
+  padding: 30px 30px 10px 30px;
+  position: relative;
+  border-bottom: 1px dashed #ddd;
+}
+
+.Contact .inner .top h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Contact .inner .top i {
+  position: absolute;
+  font-size: 20px;
+  top: 35px;
+  right: 30px;
+}
+
+.Contact .inner .left ul {
+  padding: 30px 30px 0 30px;
+  line-height: 2;
+}
+
+.Contact .inner .right .top {
+  background: #fff;
+  padding: 30px;
+}
+.Contact .inner .right .bottom {
+  background: #fff;
+  padding: 30px 0 0 0;
+  border-top: 1px dashed #ddd;
+}
+
+.footer .inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 15px;
+  gap: 30px;
+}
+
+.footer .inner ul {
+  display: flex;
+  gap: 30px;
+}
+
+.footer .copy {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 50px 235px;
+  font-size: 15px;
+}
